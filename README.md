@@ -10,7 +10,7 @@ A knowledge graph is a knowledge base that uses a graph-structured data model or
 
 
 ### Preparing Dependencies
-* spacy
+* [spacy](https://spacy.io/usage)
 * [en_core_web_sm](https://spacy.io/usage)
 
 ### Install all required dependencies
