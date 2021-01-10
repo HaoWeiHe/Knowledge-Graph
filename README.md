@@ -15,7 +15,7 @@ Here we demo a basic implementation of a knowledge graph using triples.
 * spacy
 * pandas
 * BeautifulSoup
-
+* en_core_web_sm
 
 ### Install all required dependencies
 ```conda env create -f freeze.yml```
