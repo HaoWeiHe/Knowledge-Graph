@@ -4,7 +4,7 @@
 A knowledge graph is a knowledge base that uses a graph-structured data model or topology to integrate data. Knowledge graphs are often used to store interlinked descriptions of entities – objects, events, situations or abstract concepts – with free-form semantics(from wiki). Here we demo a basic implementation of a knowledge graph using triples.
 
 ## background Knowledge
-In this project, we extract relations  from nlp pipline. If you don't familiar with this. My be [my blog](https://haoweihohoho.medium.com/brief-introduce-semantics-syntax-9b84174de947) can give you a little bit insight.
+In this project, we extract relations  from nlp pipeline. If you don't familiar with this. My be [my blog](https://haoweihohoho.medium.com/brief-introduce-semantics-syntax-9b84174de947) can give you a little bit insight.
 
 ## NLP Pipeline 
 - NER visulization
