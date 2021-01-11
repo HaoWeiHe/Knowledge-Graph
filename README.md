@@ -13,6 +13,11 @@ In this project, we extract relations  from nlp pipeline. If you don't familiar 
 - Dependency visulization
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/Dependency_example.png)
 
+- KG visulization
+![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/graph.png)
+
+- Song visulization
+![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/songs.png)
 ## What's New
 *  The spacy object has been establish for processing nlp pipline
 *  Using BeautifulSoup to craw news from website
