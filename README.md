@@ -16,7 +16,7 @@ In this project, we extract relations  from nlp pipeline. If you don't familiar 
 - KG visulization
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/graph.png)
 
-- Song visulization
+- KG visulization - song instance (random pick 100 songs)
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/songs.png)
 ## What's New
 *  The spacy object has been establish for processing nlp pipline
