@@ -10,6 +10,8 @@ In this project, we extract relations  from nlp pipeline. If you don't familiar 
 - NER visulization
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/NER_example.png)
 
+- Dependency visulization
+![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/Dependency_example.png)
 
 ## What's New
 *  The spacy object has been establish for processing nlp pipline
