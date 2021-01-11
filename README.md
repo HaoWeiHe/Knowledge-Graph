@@ -8,7 +8,7 @@ In this project, we extract relations  from nlp pipeline. If you don't familiar 
 
 ## NLP Pipeline 
 - NER visulization
-![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/NER.png)
+![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/NER_example.png)
 
 
 ## What's New
