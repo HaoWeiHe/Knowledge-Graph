@@ -15,16 +15,16 @@ In this project, we extract relations  from nlp pipeline. If you don't familiar 
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/Dependency_example.png)
 
 - KG visulization (resource: wikidata)
-<img src="https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/graph.png" width="100" height="100">
+<img src="https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/graph.png" width="250" height="250">
 
 - KG visulization - song instance (randomly pick 100 songs from wikidata)
-<img src="https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/songs.png" width="100" height="100">
+<img src="https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/songs.png" width="300" height="300">
 
 - KG visulization (resource: unsupervised information extraction )
-<img src="https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/knownled_graph_information_extraction.png" width="100" height="100">
+<img src="https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/knownled_graph_information_extraction.png" width="400" height="400">
 
 - KG visulization - "appear" instance - pairs whose relation are "appear" (Using unsupervised information extraction tech)
-<img src="https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/withappearEdge.png" width="100" height="100">
+<img src="https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/withappearEdge.png" width="500" height="500">
 
 ## What's New
 *  The spacy object has been establish for processing nlp pipline
