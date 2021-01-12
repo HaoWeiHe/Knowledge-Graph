@@ -19,10 +19,18 @@ In this project, we extract relations  from nlp pipeline. If you don't familiar 
 
 - KG visulization - song instance (randomly pick 100 songs from wikidata)
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/songs.png)
+
+- KG visulization (resource: unsupervised information extraction )
+![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/knownled_graph_information_extraction.png)
+
+- KG visulization - "appear" instance (show the pairs whose relation are "appear")
+![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/withappearEdge.png)
+
 ## What's New
 *  The spacy object has been establish for processing nlp pipline
 *  Using BeautifulSoup to craw news from website
-
+*  Finished `gramma matcher`
+*  Finished `information extraction` 
 
 ## Preparing Dependencies
 * [spacy](https://spacy.io/usage)
