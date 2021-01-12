@@ -15,14 +15,13 @@ In this project, we extract relations  from nlp pipeline. If you don't familiar 
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/Dependency_example.png)
 
 - KG visulization - song instance (randomly pick 100 songs from wikidata triplets) 
-<img src="https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/songs.png" width="650" height="650">
-
+![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/songs.png)
 
 - KG visulization (resource: unsupervised information extraction )
-<img src="https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/knownled_graph_information_extraction.png" width="650" height="650">
+![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/knownled_graph_information_extraction.png)
 
 - KG visulization - "appear" instance - pairs whose relation are "appear" (Using unsupervised information extraction tech)
-<img src="https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/withappearEdge.png" width="650" height="650">
+![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/withappearEdge.png)
 
 ## What's New
 *  The spacy object has been establish for processing nlp pipline
