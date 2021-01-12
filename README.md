@@ -14,19 +14,19 @@ In this project, we extract relations  from nlp pipeline. If you don't familiar 
 - Dependency visulization
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/Dependency_example.png)
 
-- KG visulization
+- KG visulization (resource: wikidata)
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/graph.png)
 
-- KG visulization - song instance (randomly pick 100 songs)
+- KG visulization - song instance (randomly pick 100 songs from wikidata)
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/songs.png)
 ## What's New
 *  The spacy object has been establish for processing nlp pipline
 *  Using BeautifulSoup to craw news from website
 
 
-### Preparing Dependencies
+## Preparing Dependencies
 * [spacy](https://spacy.io/usage)
 * [en_core_web_sm](https://spacy.io/usage)
 
-### Install all required dependencies
+## Install all required dependencies
 ```conda env create -f freeze.yml```
