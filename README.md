@@ -23,7 +23,7 @@ In this project, we extract relations  from nlp pipeline. If you don't familiar 
 - KG visulization (resource: unsupervised information extraction )
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/knownled_graph_information_extraction.png)
 
-- KG visulization - "appear" instance (show the pairs whose relation are "appear")
+- KG visulization - "appear" instance - pirs whose relation are "appear" (Using unsupervised information extraction tech)
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/withappearEdge.png)
 
 ## What's New
