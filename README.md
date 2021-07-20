@@ -2,7 +2,7 @@
 
 
 A knowledge graph is a structured graph from multiple sources are standardized to acquire and integrate human knowledge. Knowledge graphs are often used to store interlinked descriptions of entities – objects, events, situations or abstract concepts – with free-form semantics(from wiki). 
-Here we demo a basic implementation of a knowledge graph using triples. (There are many various ways to implement KG, and this project demo the basic way which based on result of information extraction). 
+Here we demo a basic implementation of a knowledge graph using triples. (There are many various ways to implement KG, and this project demo the automatic way which based on result of information extraction). 
 
 ## Background Knowledge
 In this project, we extract relations  from nlp pipeline. If you don't familiar with this. Maybe [my blog](https://haoweihohoho.medium.com/brief-introduce-semantics-syntax-9b84174de947) can provide you a little bit insight.
