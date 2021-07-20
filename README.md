@@ -9,7 +9,7 @@ Let's took the most common knowledge graph - Wikidata for example. One way to im
 
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/triple.png)
 
-In this project, we extract relations  from nlp pipeline. If you don't familiar with this. Maybe [my blog](https://haoweihohoho.medium.com/brief-introduce-semantics-syntax-9b84174de947) can provide you a little bit insight.
+In this project, we extract relations  from nlp pipeline. If you don't familiar with this. Maybe [A brief introduce: semantics & syntax ](https://haoweihohoho.medium.com/brief-introduce-semantics-syntax-9b84174de947) can provide you a little bit insight.
 
 ## NLP Pipeline 
 - NER visulization
