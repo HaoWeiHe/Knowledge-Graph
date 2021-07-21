@@ -29,11 +29,9 @@ nlp = spacy.load("en_core_web_sm")
 displacy.render(nlp(text), jupyter=True, style = 'dep')
  ```
 
+- dependency of the example sentence - *the milky way has spiral arms*
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/DepMilkyWay.png)
-dependency of the example sentence - *the milky way has spiral arms*
 
-<br> 
-<br>     
 - NER visulization
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/NER_example.png)
 
