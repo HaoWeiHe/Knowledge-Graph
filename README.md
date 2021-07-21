@@ -13,6 +13,7 @@ In this project, we extract relations  from nlp pipeline. If you don't familiar 
 
 ## NLP Pipeline 
 In this article, we will use nlp popeline to extract relations within a utterence. And we will gonna use spacy as our main tool.
+<br>
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/spacyPipline.svg)
 NLP Pipeline - Credict by Spacy
 <br>
@@ -27,10 +28,10 @@ text = "the milky way has spiral arms"
 nlp = spacy.load("en_core_web_sm")
 displacy.render(nlp(text), jupyter=True, style = 'dep')
  ```
-<br>
+
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/DepMilkyWay.png)
 dependency of the example sentence - *the milky way has spiral arms*
-<br>
+
 <br> 
 <br>     
 - NER visulization
