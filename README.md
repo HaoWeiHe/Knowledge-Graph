@@ -12,6 +12,21 @@ Let's took the most common knowledge graph - Wikidata for example. One way to im
 In this project, we extract relations  from nlp pipeline. If you don't familiar with this. Maybe [A brief introduce: semantics & syntax ](https://haoweihohoho.medium.com/brief-introduce-semantics-syntax-9b84174de947) can provide you a little bit insight.
 
 ## NLP Pipeline 
+In this article, we will use nlp popeline to extract relations within a utterence. And we will gonna use spacy as our main tool.
+![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/spacyPipline.svg)
+NLP Pipeline - Credict by Spacy
+
+Using a text as input and doc as output, we processing it into serveral steps by leveraging different well-trained models. That models is also known as the **NLP processing Pipeline** . A typical NLP pipeline including a segmentation (tokenizer), a Part-of-speech tagging (tager), a parser and any entity recognizer. This process can be easy access by calling Spacy libary.
+```
+import spacy
+                text = "the milky way has spiral arms"
+                nlp = spacy.load("en_core_web_sm")
+                displacy.render(nlp(text), jupyter=True, style = 'dep')
+ ```
+
+![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/DepMilkyWay.png)
+dependency of the example sentence - the milky way has spiral arms
+	       
 - NER visulization
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/NER_example.png)
 
