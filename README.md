@@ -6,20 +6,22 @@ A knowledge graph is a structured graph from multiple sources standardized to ac
 
 ## Background Knowledge
 Let's took the most common knowledge graph - Wikidata for example. One way to implement KG is using a concept of triple, which is a statement in "subject/predicate/object" form. A statement linked one entity(subject) to another (object) via a predicate. For example, the milky way has spiral arms. Therefore, the triple is going to be like this :
-
+<br>
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/triple.png)
+<br>
+In this project, we extract relations from the nlp pipeline and use the example, the milky way has spiral arms, as our demonstration input . If you aren't familiar with this. Maybe the post -[ A brief introduction: semantics & syntax ](https://haoweihohoho.medium.com/brief-introduce-semantics-syntax-9b84174de947)  can provide you a little bit of insight.
 
-In this project, we extract relations  from nlp pipeline. If you don't familiar with this. Maybe [A brief introduce: semantics & syntax ](https://haoweihohoho.medium.com/brief-introduce-semantics-syntax-9b84174de947) can provide you a little bit insight.
+<br><br><br><br>
 
 ## NLP Pipeline 
-In this article, we will use nlp popeline to extract relations within a utterence. And we will gonna use spacy as our main tool.
+In this article, we will use the nlp pipeline to extract relations within an utterance. And we are gonna use spacy as our main tool.
 <br>
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/spacyPipline.svg)
 NLP Pipeline - Credict by Spacy
 <br>
 <br>
 <br>
-Using a text as input and doc as output, we processing it into serveral steps by leveraging different well-trained models. That models is also known as the **NLP processing Pipeline** . A typical NLP pipeline including a segmentation (tokenizer), a Part-of-speech tagging (tager), a parser and any entity recognizer. This process can be easy access by calling Spacy libary.
+Using a text as input and doc as output, we process it into several steps by leveraging different well-trained models. That model is also known as the **NLP processing Pipeline**. A typical NLP pipeline including a segmentation (tokenizer), a Part-of-speech tagging (tager), a parser and any entity recognizer. This process can be easy accessed by calling the Spacy library.
 <br>
 <br>
 ```
