@@ -32,6 +32,17 @@ displacy.render(nlp(text), jupyter=True, style = 'dep')
 - dependency of the example sentence - *the milky way has spiral arms*
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/DepMilkyWay.png)
 
+
+## Information extraction / Entity extraction
+To build up a knowledge graph, it's important to extract nodes and the relation between them. There are several **unsupervised manners** to do the information extraction. On syntactic level, we could leverage part-of-Speech (POS) tags to help us extract this information, or, on semantic level, we can use Semantic Role Labeling (SRL) technique to help us extract entities.
+<br>
+In this article, we will focus on syntactic level with POS technique which is one of efficient ways to do it.
+<br>
+However, when an entity could not only just a single word but a chunk - which means multiple words should be put together. In this case, we could leverage a dependency tree to help us to extract chunks as our entities.
+<br>
+Let's see how to extract chunks through a sentence. Noun related tags will be the entities (Subject/ Object) and the dependency between them will be the relation (Predicate).
+
+
 - NER visulization
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/NER_example.png)
 
