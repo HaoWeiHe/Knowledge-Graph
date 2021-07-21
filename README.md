@@ -15,8 +15,12 @@ In this project, we extract relations  from nlp pipeline. If you don't familiar 
 In this article, we will use nlp popeline to extract relations within a utterence. And we will gonna use spacy as our main tool.
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/spacyPipline.svg)
 NLP Pipeline - Credict by Spacy
-
+  
+  
+  
 Using a text as input and doc as output, we processing it into serveral steps by leveraging different well-trained models. That models is also known as the **NLP processing Pipeline** . A typical NLP pipeline including a segmentation (tokenizer), a Part-of-speech tagging (tager), a parser and any entity recognizer. This process can be easy access by calling Spacy libary.
+  
+  
 ```
 import spacy
 text = "the milky way has spiral arms"
@@ -26,12 +30,11 @@ displacy.render(nlp(text), jupyter=True, style = 'dep')
 
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/DepMilkyWay.png)
 dependency of the example sentence - *the milky way has spiral arms*
-	       
+  
+  
+      
 - NER visulization
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/NER_example.png)
-
-- Dependency visulization
-![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/Dependency_example.png)
 
 - KG visulization - song instance (randomly pick 100 songs from wikidata triplets) 
 <div align="center">
