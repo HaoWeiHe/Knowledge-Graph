@@ -42,7 +42,7 @@ However, when an entity could not only just a single word but a chunk - which me
 <br><br>
 Let's see how to extract chunks through a sentence. Noun related tags will be the entities (Subject/ Object) and the dependency between them will be the relation (Predicate).
 
-
+## Knowledge Graph Visualization
 - NER visulization
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/NER_example.png)
 
