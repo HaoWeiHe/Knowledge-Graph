@@ -47,7 +47,7 @@ To see all of the dependency/ POS tagging relationship of the sentence - *the mi
                 # spiral ADJ amod
                 # arms NOUN dobj
 ```
-Having this information, we could easily extract a triplet. See all the ![dependency labels](https://github.com/clir/clearnlp-guidelines/blob/master/md/specifications/dependency_labels.md.)(For English only).
+Having this information, we could easily extract a triplet. See all the [dependency labels](https://github.com/clir/clearnlp-guidelines/blob/master/md/specifications/dependency_labels.md.)(For English only).
 
 ## Information extraction / Entity extraction
 To build up a knowledge graph, it's important to extract nodes and the relation between them. There are several **unsupervised manners** to do the information extraction. On syntactic level, we could leverage part-of-Speech (POS) tags to help us extract this information, or, on semantic level, we can use Semantic Role Labeling (SRL) technique to help us extract entities.
