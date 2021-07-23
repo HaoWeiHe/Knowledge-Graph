@@ -58,10 +58,6 @@ Let's see how to extract chunks through a sentence. Noun related tags will be th
 	<img src="https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/knownled_graph_information_extraction.png" alt="Editor" width650500">
 </div>
 
-- KG visulization - "appear" instance - pairs whose relation are "appear" (Using unsupervised information extraction tech)
-<div align="center">
-	<img src="https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/withappearEdge.png" alt="Editor" width="650">
-</div>
 
 ## What's New
 *  The spacy object has been establish for processing nlp pipline
