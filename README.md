@@ -147,4 +147,16 @@ So, that's it! We just finished the core part of entity extracion code. Let's pu
 
 ### Install all required dependencies (on terminal)
 * conda env create -f freeze.yml
-* python -m spacy download en_core_web_sm											
+* python -m spacy download en_core_web_sm													
+## Usage
+Simply import knowledgeGraph to get the result						
+														
+```
+																from knowledgeGraph import *
+	text = "the milky way has spiral arms" #replace this to any sentence 
+	get_entity(text)
+	# output: ('milky way', 'spiral arms')
+	get_relation(text)
+	#output: 'have'
+
+```
