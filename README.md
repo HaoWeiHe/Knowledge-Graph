@@ -59,26 +59,26 @@ However, when an entity could not only just a single word but a chunk - which me
 Let's see how to extract chunks through a sentence. Noun related tags will be the entities (Subject/ Object) and the dependency between them will be the relation (Predicate).
 ### Extract Eneities
 ```
-                   def get_entities(sent):
-                      ent1, ent2 = [],[]
-                      cpmds, mods = [],[] #for compound and modifier
-                      for token in nlp(sent):
-                        if token.dep_ == "punct": #if current token is a punctuation mark, move to the next token
-                          continue 
-                        if token.dep_ == "compound":
-                          cpmds.append(token.text)
-                        if token.dep_[:-3]== "mod":
-                          mods.append(token.text)
-                        if "subj" in token.dep_:
-                          ent1 = cpmds + mods + token.text
-                          cpmds, mods = [],[] 
-                        if "obj" in token.dep_:
-                          ent2 = cpmds + mods + token.text
-                          cpmds, mods = [],[] 
-                      return ent1, ent2
+	def get_entities(self, sent):
+		ent1, ent2 = [],[]
+		cpmds, mods = [],[] #for compound and modifier
+		for token in self.nlp(sent):
+			if token.dep_ == "punct": #if current token is a punctuation mark, move to the next token
+				continue 
+			if token.dep_ == "compound":
+				cpmds.append(token.text)
+			if token.dep_[-3:]== "mod":
+				mods.append(token.text)
+			if "subj" in token.dep_:
+				ent1 = cpmds + mods + [token.text]
+				cpmds, mods = [],[] 
+			if "obj" in token.dep_:
+				ent2 = cpmds + mods + [token.text]
+				cpmds, mods = [],[] 
+		return " ".join(ent1), " ".join(ent2)
                 
                 stn_text = "the milky way has spiral arms"
-                print(extract_entities(stn_text))
+                print(get_entities(stn_text))
                 # >> ['milky way', 'spiral arms']
 ```
 
@@ -87,7 +87,7 @@ Let's see how to extract chunks through a sentence. Noun related tags will be th
                 import spacy
                 from spacy.matcher import Matcher
 
-                def extrac_relation(sent):
+                def get_relations(sent):
                   res = []
                   matcher = Matcher(nlp.vocab)
                   pattern = [{'DEP':'ROOT'}]
@@ -110,8 +110,8 @@ So, that's it! We just finished the core part of entity extracion code. Let's pu
 ```
  		stn_text = "the milky way has spiral arms"
                 sub, obj = [], []
-                chunk_pair = extract_entities(stn_text)
-                relation = [extrac_relation(stn_text)]
+                chunk_pair = get_entities(stn_text)
+                relation = [get_relations(stn_text)]
                 if chunk_pair and relation:
                   sub.append(chunk_pair[0].strip())
                   obj.append(chunk_pair[1].strip())
@@ -144,8 +144,7 @@ So, that's it! We just finished the core part of entity extracion code. Let's pu
 *  Finished `information extraction` 
 
 ## Preparing Dependencies
-* [spacy](https://spacy.io/usage)
-* [en_core_web_sm](https://spacy.io/usage)
 
-## Install all required dependencies
-```conda env create -f freeze.yml```
+### Install all required dependencies (on terminal)
+* conda env create -f freeze.yml
+* python -m spacy download en_core_web_sm											
