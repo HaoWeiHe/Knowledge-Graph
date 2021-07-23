@@ -155,7 +155,7 @@ To get the result of information extraction, simply import knowledgeGraph
 
 ```
 from knowledgeGraph import *											
-text = "the milky way has spiral arms" #replace this to any sentence 
-print(get_entity(text)) #output: ('milky way', 'spiral arms')
-print(get_relation(text)) #output: 'have'
+text = "the milky way has spiral arms" #your text here
+print(get_entity(text)) 
+print(get_relation(text))
  ```
