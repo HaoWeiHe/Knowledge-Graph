@@ -148,5 +148,5 @@ So, that's it! We just finished the core part of entity extracion code. Let's pu
 * [en_core_web_sm](https://spacy.io/usage)
 
 ## Install all required dependencies
-```conda env create -f freeze.yml
-   python -m spacy download en_core_web_sm```														
+```conda env create -f freeze.yml``` <br>
+```python -m spacy download en_core_web_sm```														
