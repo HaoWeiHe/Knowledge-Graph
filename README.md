@@ -57,6 +57,7 @@ In this article, we will focus on syntactic level with POS technique which is on
 However, when an entity could not only just a single word but a chunk - which means multiple words should be put together. In this case, we could leverage a dependency tree to help us to extract chunks as our entities.
 <br><br>
 Let's see how to extract chunks through a sentence. Noun related tags will be the entities (Subject/ Object) and the dependency between them will be the relation (Predicate).
+### Extract Eneities
 ```
                    def get_entities(sent):
                       ent1, ent2 = [],[]
@@ -79,6 +80,47 @@ Let's see how to extract chunks through a sentence. Noun related tags will be th
                 stn_text = "the milky way has spiral arms"
                 print(extract_entities(stn_text))
                 # >> ['milky way', 'spiral arms']
+```
+
+### Extract Relations 
+```
+                import spacy
+                from spacy.matcher import Matcher
+
+                def extrac_relation(sent):
+                  res = []
+                  matcher = Matcher(nlp.vocab)
+                  pattern = [{'DEP':'ROOT'}]
+                  
+                  matcher.add("Rule_1", None, pattern) 
+                  doc = nlp(sent)
+                  matches = matcher(doc)
+                  for match_id, start, end in matches:
+                    string_id = nlp.vocab.strings[match_id]  
+                    for idx in range(start, end):
+                      res.append(doc[idx].lemma_)
+                  
+                  return res[0]
+                
+                stn_text = "the milky way has spiral arms"
+                print(extrac_relation(stn_text))
+                # >> ['have']
+```
+So, that's it! We just finished the core part of entity extracion code. Let's put those together.
+```
+ 		stn_text = "the milky way has spiral arms"
+                sub, obj = [], []
+                chunk_pair = extract_entities(stn_text)
+                relation = [extrac_relation(stn_text)]
+                if chunk_pair and relation:
+                  sub.append(chunk_pair[0].strip())
+                  obj.append(chunk_pair[1].strip())
+
+                print("stn:\t{}\nsubject:\t{}\nobject:\t{}\npredicate:\t{}".format(stn_text,sub, obj, relation))
+                #stn:    the milky way has spiral arms
+                #subject:    ['milky way']
+                #object: ['spiral arms']
+                #predicate:  ['have']
 ```
 ## Knowledge Graph Visualization
 - NER visulization
