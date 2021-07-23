@@ -34,6 +34,20 @@ displacy.render(nlp(text), jupyter=True, style = 'dep')
 - dependency of the example sentence - *the milky way has spiral arms*
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/DepMilkyWay.png)
 
+To see all of the dependency/ POS tagging relationship of the sentence - *the milky way has spiral arms*, we could have the following code to help us determine which part we would like to extract.
+```
+                for token in doc:
+                    print(token.text, token.pos_, token.dep_)
+                   
+                 
+                # the DET det
+                # milky ADJ amod
+                # way NOUN nsubj
+                # has VERB ROOT
+                # spiral ADJ amod
+                # arms NOUN dobj
+```
+Having this information, we could easily extract a triplet. See all the ![dependency labels](https://github.com/clir/clearnlp-guidelines/blob/master/md/specifications/dependency_labels.md.) </a>(For English only).
 
 ## Information extraction / Entity extraction
 To build up a knowledge graph, it's important to extract nodes and the relation between them. There are several **unsupervised manners** to do the information extraction. On syntactic level, we could leverage part-of-Speech (POS) tags to help us extract this information, or, on semantic level, we can use Semantic Role Labeling (SRL) technique to help us extract entities.
@@ -43,7 +57,29 @@ In this article, we will focus on syntactic level with POS technique which is on
 However, when an entity could not only just a single word but a chunk - which means multiple words should be put together. In this case, we could leverage a dependency tree to help us to extract chunks as our entities.
 <br><br>
 Let's see how to extract chunks through a sentence. Noun related tags will be the entities (Subject/ Object) and the dependency between them will be the relation (Predicate).
-
+```
+                   def get_entities(sent):
+                      ent1, ent2 = [],[]
+                      cpmds, mods = [],[] #for compound and modifier
+                      for token in nlp(sent):
+                        if token.dep_ == "punct": #if current token is a punctuation mark, move to the next token
+                          continue 
+                        if token.dep_ == "compound":
+                          cpmds.append(token.text)
+                        if token.dep_[:-3]== "mod":
+                          mods.append(token.text)
+                        if "subj" in token.dep_:
+                          ent1 = cpmds + mods + token.text
+                          cpmds, mods = [],[] 
+                        if "obj" in token.dep_:
+                          ent2 = cpmds + mods + token.text
+                          cpmds, mods = [],[] 
+                      return ent1, ent2
+                
+                stn_text = "the milky way has spiral arms"
+                print(extract_entities(stn_text))
+                # >> ['milky way', 'spiral arms']
+```
 ## Knowledge Graph Visualization
 - NER visulization
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/NER_example.png)
