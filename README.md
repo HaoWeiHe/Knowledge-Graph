@@ -151,8 +151,8 @@ So, that's it! We just finished the core part of entity extracion code. Let's pu
 ## Usage
 To get the result of information extraction, simply import knowledgeGraph 		
 														
-```
-	   															from knowledgeGraph import *												from knowledgeGraph import *
+```    	
+																from knowledgeGraph import *											
 	text = "the milky way has spiral arms" #replace this to any sentence 
 	get_entity(text)
 	# output: ('milky way', 'spiral arms')
