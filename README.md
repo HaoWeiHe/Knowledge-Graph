@@ -87,7 +87,7 @@ Let's see how to extract chunks through a sentence. Noun related tags will be th
                 import spacy
                 from spacy.matcher import Matcher
 
-                def extrac_relation(sent):
+                def get_relations(sent):
                   res = []
                   matcher = Matcher(nlp.vocab)
                   pattern = [{'DEP':'ROOT'}]
@@ -110,8 +110,8 @@ So, that's it! We just finished the core part of entity extracion code. Let's pu
 ```
  		stn_text = "the milky way has spiral arms"
                 sub, obj = [], []
-                chunk_pair = extract_entities(stn_text)
-                relation = [extrac_relation(stn_text)]
+                chunk_pair = get_entities(stn_text)
+                relation = [get_relations(stn_text)]
                 if chunk_pair and relation:
                   sub.append(chunk_pair[0].strip())
                   obj.append(chunk_pair[1].strip())
