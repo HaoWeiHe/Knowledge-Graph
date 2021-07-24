@@ -17,22 +17,28 @@
 
 ## Preparing Dependencies
 
-### Install all required dependencies (on terminal)
+### Install all required dependencies 
 * conda env create -f freeze.yml
 * python -m spacy download en_core_web_sm													
+
+
 ## Usage
-To get the result of information extraction, simply import knowledgeGraph 		
-														
+To get the result of `Entity-Chunk Extraction` 									
 
 ```
 from knowledgeGraph import *		
-#put_your_text_here
 text = "the milky way has spiral arms" 
 get_entity(text)
-get_relation(text)
  ```
 
+To get the result of `predicate Extraion` 									
 
+```
+from knowledgeGraph import *		
+text = "the milky way has spiral arms" 
+get_relation(text)
+ ```
+ 
 ## Intorduction
 A knowledge graph is a structured graph from multiple sources standardized to acquire and integrate human knowledge. Knowledge graphs are often used to store interlinked descriptions of entities – objects, events, situations or abstract concepts – with free-form semantics(from wiki). Here we demo one way of implementation using triples as our data format. (There are many various ways to implement KG, and this project demonstrates the automatic way based on the result of information extraction).
 
