@@ -25,10 +25,11 @@ To get the result of information extraction, simply import knowledgeGraph
 														
 
 ```
-from knowledgeGraph import *											
-text = "the milky way has spiral arms" #your text here
-print(get_entity(text)) 
-print(get_relation(text))
+from knowledgeGraph import *		
+#put_your_text_here
+text = "the milky way has spiral arms" 
+get_entity(text)
+get_relation(text)
  ```
  
 ## Intorduction
