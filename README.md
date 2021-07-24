@@ -1,7 +1,8 @@
 # Knowledge-Graph
 ## Features
 * Information Extraction
-* Chunk Extraction - `get_entity`
+* Entity-Chunk Extraction
+* predicate Extraion
 * Dependency Tree
 * Knowledge Graph Visualization
 
