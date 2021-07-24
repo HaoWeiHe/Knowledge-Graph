@@ -54,7 +54,7 @@ To build up a knowledge graph, it's important to extract nodes and the relation 
 <br><br>
 In this article, we will focus on syntactic level with POS technique which is one of efficient ways to do it.
 <br><br>
-However, when an entity could not only just a single word but a chunk - which means multiple words should be put together. In this case, we could leverage a dependency tree to help us to extract chunks as our entities.
+However, when an entity could not only just a single word but a chunk - which means multiple words should be put together. In this case, we could leverage a dependency tree and gramma rules to help us to extract chunks as our entities.
 <br><br>
 Let's see how to extract chunks through a sentence. Noun related tags will be the entities (Subject/ Object) and the dependency between them will be the relation (Predicate).
 ### Extract Eneities
@@ -138,6 +138,7 @@ So, that's it! We just finished the core part of entity extracion code. Let's pu
 
 
 ## What's New
+*  Finish Finished `get_entity` to get chunk information													*  *  Finish Finished `get_relation` to get relation between entities
 *  Sorted up Knowledge graph module													
 *  The spacy object has been establish for processing nlp pipline
 *  Using BeautifulSoup to craw news from website
