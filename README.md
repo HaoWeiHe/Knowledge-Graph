@@ -24,7 +24,7 @@
 To get the result of `Entity-Chunk Extraction` 									
 
 ```
-from knowledgeGraph import *		
+from knowledgeGraph import get_entity		
 text = "the milky way has spiral arms" 
 get_entity(text)
  ```
@@ -32,7 +32,7 @@ get_entity(text)
 To get the result of `predicate Extraion` 									
 
 ```
-from knowledgeGraph import *		
+from knowledgeGraph import get_relation		
 text = "the milky way has spiral arms" 
 get_relation(text)
  ```
