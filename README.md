@@ -1,6 +1,36 @@
 # Knowledge-Graph
+## Features
+* Information Extraction
+* Chunk Extraction - `get_entity`
+* Dependency Tree
+* Knowledge Graph Visualization
 
+## What's New
+*  Finish Finished `get_entity` to get chunk information
+*  Finish Finished `get_relation` to get relation between entities
+*  Sorted up Knowledge graph module													
+*  The spacy object has been establish for processing nlp pipline
+*  Using BeautifulSoup to craw news from website
+*  Finished `gramma matcher`
+*  Finished `information extraction` 
 
+## Preparing Dependencies
+
+### Install all required dependencies (on terminal)
+* conda env create -f freeze.yml
+* python -m spacy download en_core_web_sm													
+## Usage
+To get the result of information extraction, simply import knowledgeGraph 		
+														
+
+```
+from knowledgeGraph import *											
+text = "the milky way has spiral arms" #your text here
+print(get_entity(text)) 
+print(get_relation(text))
+ ```
+ 
+## Intorduction
 A knowledge graph is a structured graph from multiple sources standardized to acquire and integrate human knowledge. Knowledge graphs are often used to store interlinked descriptions of entities – objects, events, situations or abstract concepts – with free-form semantics(from wiki). Here we demo one way of implementation using triples as our data format. (There are many various ways to implement KG, and this project demonstrates the automatic way based on the result of information extraction).
 
 
@@ -71,27 +101,3 @@ However, when an entity could not only just a single word but a chunk - which me
 </div>
 
 
-## What's New
-*  Finish Finished `get_entity` to get chunk information
-*  Finish Finished `get_relation` to get relation between entities
-*  Sorted up Knowledge graph module													
-*  The spacy object has been establish for processing nlp pipline
-*  Using BeautifulSoup to craw news from website
-*  Finished `gramma matcher`
-*  Finished `information extraction` 
-
-## Preparing Dependencies
-
-### Install all required dependencies (on terminal)
-* conda env create -f freeze.yml
-* python -m spacy download en_core_web_sm													
-## Usage
-To get the result of information extraction, simply import knowledgeGraph 		
-														
-
-```
-from knowledgeGraph import *											
-text = "the milky way has spiral arms" #your text here
-print(get_entity(text)) 
-print(get_relation(text))
- ```
