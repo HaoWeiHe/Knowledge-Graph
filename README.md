@@ -16,8 +16,6 @@
 *  Finished `information extraction` 
 
 ## Preparing Dependencies
-
-### Install all required dependencies 
 * conda env create -f freeze.yml
 * python -m spacy download en_core_web_sm													
 
