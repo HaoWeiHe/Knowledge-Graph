@@ -9,9 +9,7 @@
 ## What's New
 *  Finish Finished `get_entity` to get chunk information
 *  Finish Finished `get_relation` to get relation between entities
-*  Sorted up Knowledge graph module													
-*  The spacy object has been establish for processing nlp pipline
-*  Using BeautifulSoup to craw news from website
+*  Sorted up Knowledge graph module
 *  Finished `gramma matcher`
 *  Finished `information extraction` 
 
