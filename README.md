@@ -24,7 +24,8 @@ Get the Entity Chunk. Sample code:
 ```
 from knowledgeGraph import get_entity		
 text = "the milky way has spiral arms" 
-get_entity(text)
+output = get_entity(text)
+print(output)
  ```
 output :  ('milky way', 'spiral arms')
 
@@ -33,7 +34,8 @@ Get Relation. Sample code:
 ```
 from knowledgeGraph import get_relation		
 text = "the milky way has spiral arms" 
-get_relation(text)
+output = get_relation(text)
+print(output)
  ```
 output :   'have'
 
