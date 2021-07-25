@@ -40,7 +40,7 @@ A knowledge graph is a structured graph from multiple sources standardized to ac
 
 
 ## Background Knowledge
-Let's took the most common knowledge graph - Wikidata for example. One way to implement KG is using a concept of triple, which is a statement in "subject/predicate/object" form. A statement linked one entity(subject) to another (object) via a predicate. For example, the milky way has spiral arms. Therefore, the triple is going to be like this :
+Let's took the most common knowledge graph - Wikidata for example. One way to implement KG is using a concept of triple, which is a statement in "subject/predicate/object" form. A statement linked one entity(subject) to another (object) via a predicate. For example, *the milky way has spiral arms*. The triple is going to be like this :
 <br>
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/triple.png)
 <br>
