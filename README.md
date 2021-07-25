@@ -7,8 +7,9 @@
 * Knowledge Graph Visualization
 
 ## What's New
-*  Finish Finished `get_entity` to get chunk information
-*  Finish Finished `get_relation` to get relation between entities
+*  Finish `show` to get result of visualization
+*  Finish `get_entity` to get chunk information
+*  Finish `get_relation` to get relation between entities
 *  Sorted up Knowledge graph module
 *  Finished `gramma matcher`
 *  Finished `information extraction` 
@@ -19,7 +20,7 @@
 
 
 ## Usage
-To get the result of `Entity-Chunk Extraction` 									
+Get the Entity-Chunk 
 
 ```
 from knowledgeGraph import get_entity		
@@ -27,14 +28,22 @@ text = "the milky way has spiral arms"
 get_entity(text)
  ```
 
-To get the result of `predicate Extraion` 									
+Get Relation
 
 ```
 from knowledgeGraph import get_relation		
 text = "the milky way has spiral arms" 
 get_relation(text)
  ```
- 
+
+visualization
+```
+from knowledgeGraph import get_relation		
+text = "the milky way has spiral arms" 
+show("the milky way has spiral arms")
+ ```
+![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/triple.png)
+
 ## Intorduction
 A knowledge graph is a structured graph from multiple sources standardized to acquire and integrate human knowledge. Knowledge graphs are often used to store interlinked descriptions of entities – objects, events, situations or abstract concepts – with free-form semantics(from wiki). Here we demo one way of implementation using triples as our data format. (There are many various ways to implement KG, and this project demonstrates the automatic way based on the result of information extraction).
 
