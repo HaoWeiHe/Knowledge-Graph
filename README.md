@@ -20,23 +20,28 @@
 
 
 ## Usage
-Get the Entity-Chunk 
+Get the Entity-Chunk, use `get_entity`
 
+Sample code - 
 ```
 from knowledgeGraph import get_entity		
 text = "the milky way has spiral arms" 
 get_entity(text)
  ```
+>> ('milky way', 'spiral arms')
 
-Get Relation
 
+Get Relation, use `get_relation`
+Sample code - 
 ```
 from knowledgeGraph import get_relation		
 text = "the milky way has spiral arms" 
 get_relation(text)
  ```
+>> 'have'
 
-Visualization
+Visualization, use `show`
+Sample code - 
 ```
 from knowledgeGraph import get_relation		
 text = "the milky way has spiral arms" 
