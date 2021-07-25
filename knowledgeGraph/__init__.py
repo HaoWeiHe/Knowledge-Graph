@@ -7,4 +7,4 @@ infor_Extract = InformationExtraction()
 get_entity = infor_Extract.get_entities
 get_relation = infor_Extract.get_relations
 vis = Visualize()
-get_vis = vis.show
+show = vis.show
