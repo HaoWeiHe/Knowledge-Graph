@@ -2,7 +2,7 @@
 ## Features
 * Information Extraction
 * Entity-Chunk Extraction
-* predicate Extraion
+* Predicate Extraion
 * Dependency Tree
 * Knowledge Graph Visualization
 
