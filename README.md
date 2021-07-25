@@ -42,7 +42,7 @@ output :   'have'
 <br><br>
 Visualization. Sample code
 ```
-from knowledgeGraph import get_relation		
+from knowledgeGraph import show		
 text = "the milky way has spiral arms" 
 show("the milky way has spiral arms")
  ```
