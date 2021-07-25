@@ -20,7 +20,7 @@
 
 
 ## Usage
-Get the Entity-Chunk, use `get_entity`
+Get the Entity-Chunk
 
 Sample code - 
 ```
@@ -28,19 +28,20 @@ from knowledgeGraph import get_entity
 text = "the milky way has spiral arms" 
 get_entity(text)
  ```
->> ('milky way', 'spiral arms')
+output -  ('milky way', 'spiral arms')
 
-
-Get Relation, use `get_relation`
+<br><br>
+Get Relation
 Sample code - 
 ```
 from knowledgeGraph import get_relation		
 text = "the milky way has spiral arms" 
 get_relation(text)
  ```
->> 'have'
+output -   'have'
 
-Visualization, use `show`
+<br><br>
+Visualization
 Sample code - 
 ```
 from knowledgeGraph import get_relation		
@@ -48,7 +49,7 @@ text = "the milky way has spiral arms"
 show("the milky way has spiral arms")
  ```
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/showfunc.png)
-
+<br><br>
 ## Intorduction
 A knowledge graph is a structured graph from multiple sources standardized to acquire and integrate human knowledge. Knowledge graphs are often used to store interlinked descriptions of entities – objects, events, situations or abstract concepts – with free-form semantics(from wiki). Here we demo one way of implementation using triples as our data format. (There are many various ways to implement KG, and this project demonstrates the automatic way based on the result of information extraction).
 
