@@ -20,34 +20,31 @@
 
 
 ## Usage
-Get the Entity-Chunk
-
-Sample code - 
+Get the Entity Chunk. Sample code: 
 ```
 from knowledgeGraph import get_entity		
 text = "the milky way has spiral arms" 
 get_entity(text)
  ```
-output -  ('milky way', 'spiral arms')
+output :  ('milky way', 'spiral arms')
 
 <br><br>
-Get Relation
-Sample code - 
+Get Relation. Sample code:
 ```
 from knowledgeGraph import get_relation		
 text = "the milky way has spiral arms" 
 get_relation(text)
  ```
-output -   'have'
+output :   'have'
 
 <br><br>
-Visualization
-Sample code - 
+Visualization. Sample code
 ```
 from knowledgeGraph import get_relation		
 text = "the milky way has spiral arms" 
 show("the milky way has spiral arms")
  ```
+ output: 
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/showfunc.png)
 <br><br>
 ## Intorduction
