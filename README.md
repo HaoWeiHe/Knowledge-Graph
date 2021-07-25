@@ -44,7 +44,6 @@ from knowledgeGraph import get_relation
 text = "the milky way has spiral arms" 
 show("the milky way has spiral arms")
  ```
- output: 
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/showfunc.png)
 <br><br>
 ## Intorduction
