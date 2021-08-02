@@ -18,7 +18,6 @@
 * conda env create -f freeze.yml
 * python -m spacy download en_core_web_sm													
 
-
 ## Usage
 Get the Entity Chunk. Sample code: 
 ```
@@ -48,6 +47,10 @@ show("the milky way has spiral arms")
  ```
 ![img](https://github.com/HaoWeiHe/Knowledge-Graph/blob/main/Img/triple_gen.png)
 <br><br>
+
+## Online Demo (Triplet Extraction)
+[http://www.haoweihohoho.com/KGDemo](http://www.haoweihohoho.com/KGDemo)
+
 ## Intorduction
 A knowledge graph is a structured graph from multiple sources standardized to acquire and integrate human knowledge. Knowledge graphs are often used to store interlinked descriptions of entities – objects, events, situations or abstract concepts – with free-form semantics(from wiki). Here we demo one way of implementation using triples as our data format. (There are many various ways to implement KG, and this project demonstrates the automatic way based on the result of information extraction).
 
